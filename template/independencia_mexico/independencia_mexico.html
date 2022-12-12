@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Independencia de México</title>
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/fuzzy-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/logica.js') }}"></script>
+</head>
+<body onload="reloj()">
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>La Independencia de México</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-1">00:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="../static/fotos_2/1.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+        </div>
+        <p>La independencia de México fue la consecuencia de varios sucesos ocurridos dentro de nuestra historia como la Sublevación del Padre Miguel Hidalgo o la sublevación de José María Morelos, cada suceso nos ayudo a culminar con la independencia de nuestro país.
+        <br>El virreinato de la Nueva España (hoy México) y el de Perú constituían las colonias más prósperas y ricas que España disponía. México producía en Zacatecas y Guanajuato el 67 por 100 de toda la plata de América. Alrededor de 1810, contaba con una población de unos seis millones de habitantes, repartidos en un 18 por 100 de blancos (setenta criollos por cada peninsular), un 60 por 100 de aborigenes (la mayoría del país) y un 22 por 100 de castas (pardos y mestizos). La riqueza se encontraba mal distribuida; como observó Alexander von Humboldt, México es el país de la desigualdad.
+        <br>España, envuelta en guerras, una veces con Inglaterra por compromisos diplomáticos y otras con Francia, exigió mayores y más directas exacciones fiscales a las colonias, al tiempo que debilitaba su control militar y administrativo sobre ellas. Al acudir al dinero mexicano, chocó con los intereses de la Iglesia, principal capitalista del país.</p>
+        <h2>Sublevación de Miguel Hidalgo</h2>
+        <p>En el Bajío, región próspera y fértil de Guanajuato, la ebullición social se desbordó y encontró a su líder en el sacerdote mestizo Miguel Hidalgo y Costilla. La conspiración de Querétaro lo atrajo a su causa y aprovechó su enorme ascendiente sobre los indios.
+        <br>Desbaratado por los realistas, este levantamiento había sido inspirado por criollos ilustrados y radicales como Ignacio Allende, Juan Aldama y Miguel Domínguez.
+        <br>Hidalgo apeló al apoyo popular y el 16 de septiembre de 1810, en la misa, profirió el famoso Grito de Dolores. El movimiento se propagó por todo el Bajío y llegó a contar con un ejército de cincuenta mil hombres, en su mayoría indios y mestizos mal armados e indisciplinados. El cura Hidalgo, con la imagen de la virgen de Guadalupe como estandarte, asaltó y tomó la ciudad de Guanajuato, donde decidió aprisionar a los españoles, confiscar sus bienes y abolir el tributo indígena.
+        <br>Los criollos y peninsulares adinerados se enfrentaron a Hidalgo en la Alhóndiga de Granaditas (Guanajuato), donde habían concentrado sus fuerzas. La victoria supuso una matanza de blancos, ya que latía en la guerra el odio racial.
+        <br>Hostigado por militares españoles y criollos, Miguel Hidalgo es derrotado el 17 de enero de 1811 en el Puente de Calderón, huye con su lugarteniente Allende hacia el norte, pero cae en una emboscada en Chihuahua, y es más tarde ajusticiado, dando su vida a favor de la Independencia de México.</p>
+        <div>
+            <img src="../static/fotos_2/2.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Sublevación de Miguel Hidalgo y Costilla</p>
+        </div>
+        <h2>Sublevación de Jose María Morelos</h2>
+        <p>Otro gran personaje dentro de nuestra historia fue el sacerdote mestizo, José María Morelos, quien se une al Padre Miguel Hidalgo y levanta un ejército popular, pero disciplinado, móvil y aguerrido. En 1812 cae Oaxaca en sus manos, lo que provoca la alarma de los realistas. Morelos, el más intuitivo de los nacionalistas de su país, promulgó un decreto constitucional por el que todos se convertían en americanos y se abolían las castas, el tributo indio y la esclavitud. Partidario de un socialismo utópico y agrario, fue juzgado por herejía y ajusticiado en 1815.
+        <br>Dos compañeros de Morelos continuaron la lucha después de su muerte: Vicente Guerrero y Guadalupe Victoria. La represión fue llevada a cabo por el ejercito colonial criollo y la Iglesia oficial, que constituían, entre 1815 y 1821, las fuerzas más conservadoras del país.
+        <br>Sólo una política muy hábil hubiera podido retener a los criollos para la Corona y España, pero los liberales peninsulares precipitaron la caída del colonialismo americano.</p>
+        <div>
+            <img src="../static/fotos_2/3.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Jose Maria Morelos</p>
+        </div>
+        <h2>Constitución de 1812: Camino a la proclamación de Independencia de México</h2>
+        <p>Fernando VII había dispuesto la formación de una enorme expedición punitiva que partiría hacia América, compuesta por 20.000 veteranos. Uno de sus jefes, el teniente coronel Rafael de Riego, se sublevó el 1 de enero de 1820 en Cabezas de San Juan, proclamó la Constitución de 1812 y obligó a Fernando VII a aceptarla el 8 de marzo.
+        <br>Durante el trienio liberal (1820-1823), tras el pronunciamiento de Riego, se proclama en México la Constitución de Cádiz y se eligen diputados a Cortes mediante sufragio censitario, como en la Península. El momento se aprovechó para cercenar las tierras de la Iglesia, atacar las órdenes monásticas y abolir el fuero eclesiástico. La oligarquía criolla, aristocrática y terrateniente, vio peligrar su posición social, ya que España no podía garantizar el dominio de las masas indígenas.</p>
+        <div>
+            <img src="../static/fotos_2/4.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Constitución de Cadiz de 1812</p>
+        </div>
+        <h2>Plan de Iguala o de las Tres Garantias</h2>
+        <p>Los criollos promovieron un movimiento para defender su herencia colonial y encontraron un líder en Agustín de Iturbide, hijo de un comerciante vasco de Valladolid (Morelia), que había servido como voluntario en el ejército realista contra los insurgentes, a los que combatió de 1810 a 1816. Entró a formar parte de la conspiración de la Profesa, cuya finalidad consistía en impedir el restablecimiento de la Constitución española de Cádiz. En 1820 aceptó el mando como comandante en jefe para luchar contra Guerrero, al que procuró atraerse a su causa. Para ello pactó con él y el 24 de febrero de 1821 dio a conocer el Plan de Iguala o de las Tres Garantías, documento independentista conservador que recibió el apoyo de la Iglesia, el ejército y la oligarquía. El Plan propugnaba la implantación de una monarquía constitucional, el mantenimiento de la religión católica y el igualitarismo racial.</p>
+        <div>
+            <img src="../static/fotos_2/5.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Agustin de Iturbide</p>
+        </div>
+        <h2>Proclamación de la Independencia de México</h2>
+        <p>Juan O’Donojú, último virrey de Nueva España, firmó con los jefes del Ejército de las Tres garantías el Tratado de Córdoba, que nombró una Junta de Gobierno. Ésta proclamó la independencia de México el 27 de septiembre de 1821. Se organiza una regencia de cinco miembros, presidida por Iturbide.
+        <br>Al no reconocer España el Tratado de Córdoba y al producirse escisiones internas entre iturbidistas y republicanos, el 18 de mayo de 1822, Iturbide decide proclamarse emperador con el apoyo popular.</p>
+        <div>
+            <img src="../static/fotos_2/6.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Proclamacion de la Independencia de México</p>
+        </div>
+        <p>En marzo de 1823, Agustín I es destronado por el general Santa-Anna y el 4 de octubre de 1824 México se declara república federal, a imitación de los Estados Unidos, entregando la presidencia a Guadalupe Victoria.
+        <br>Tras un período de inestabilidad, Santa-Anna asumió el mando en abril de 1833 y dominó el país durante veinte años.
+        <br>Texas se separa de México y se anexiona a la Unión norteamericana en 1846 lo que provoca la guerra entre Estados Unidos y México a partir de ese año.
+        <br>La victoria favorece a los norteamericanos, que obligan a México a suscribir el tratado de Guadalupe-Hidalgo (1848) por el que este último pierde Texas (definitivamente), Nevada, Utah, Arizona, la Alta California, Nuevo México, parte de Colorado y el norte de Sonora, Chihuahua y Coahuila.</p>
+    </div>
+
+    <!--  Cruz, Valeria y Martínez, Diego (2015, 23 de enero). La Independencia de México. Historia de México. https://lahistoriamexicana.mx/siglo-xix/independencia-de-mexico  -->
+
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Conteste las siguientes preguntas para evaluar su conocimiento.</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-2">00:00</p>
+            </div>
+        </div>
+        <form id="form1">
+            <fieldset>
+            <legend>¿En qué año se realizó el Grito de Dolores?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p1" name="." value="Verdadero">
+                        <label for="p1">1810</label>
+                
+                        <input type="radio" class="ms-3" id="p2" name="." value="Falso">
+                        <label for="p2">1815</label>
+                
+                        <input type="radio" class="ms-3" id="p3" name="." value="Falso">
+                        <label for="p3">1812</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(2, 1)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form2">
+            <fieldset>
+            <legend>¿Quién tomó control de Oaxaca en 1812?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p4" name="." value="Falso">
+                        <label for="p4">Vicente Guerrero</label>
+                
+                        <input type="radio" class="ms-3" id="p5" name="." value="Falso">
+                        <label for="p5">Miguel Hidalgo</label>
+                
+                        <input type="radio" class="ms-3" id="p6" name="." value="Verdadero">
+                        <label for="p6">Jose María Morelos</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(2, 2)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form3">
+            <fieldset>
+            <legend>¿En qué año Agustín de Iturbide aceptó el mando como comandante en jefe para luchar contra Guerrero?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p7" name="." value="Falso">
+                        <label for="p7">1816</label>
+                
+                        <input type="radio" class="ms-3" id="p8" name="." value="Falso">
+                        <label for="p8">1810</label>
+                
+                        <input type="radio" class="ms-3" id="p9" name="." value="Verdadero">
+                        <label for="p9">1820</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(2, 3)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form4">
+            <fieldset>
+            <legend>¿Qué evento de importancia ocurrió el 27 de septiembre de 1821?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 80%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p10" name="." value="Falso">
+                        <label for="p10">Iturbide proclamó el Plan de Iguala</label>
+                
+                        <input type="radio" class="ms-3" id="p11" name="." value="Verdadero">
+                        <label for="p11">Se firmó los Tratados de Córdoba</label>
+                
+                        <input type="radio" class="ms-3" id="p12" name="." value="Falso">
+                        <label for="p12">Iturbide se proclama emperador de México</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(2, 4)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form5">
+            <fieldset>
+            <legend>¿Qué evento de importancia ocurrió el 4 de octubre de 1824?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 80%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p13" name="." value="Verdadero">
+                        <label for="p13">México se declara república federal</label>
+                
+                        <input type="radio" class="ms-3" id="p14" name="." value="Falso">
+                        <label for="p14">Iturbide es destronado por el general Santa-Anna</label>
+                
+                        <input type="radio" class="ms-3" id="p15" name="." value="Falso">
+                        <label for="p15">Iturbide se proclama emperador de México</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(2, 5)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <div></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" onclick="obtenerRespuestas(document.getElementById('form1'), document.getElementById('form2'), 
+            document.getElementById('form3'), document.getElementById('form4'), document.getElementById('form5'))">Enviar respuestas</button>
+        </div>
+    </div>
+</body>
+</html>

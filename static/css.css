@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(80, 80, 80);
+    padding: 2%;
+}
+
+/*h1, h2, h3, p, ul {
+    text-indent: 3%;
+}*/
+
+div {
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+}
+
+img{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+
+h1, h2, h3 {
+    padding-top: 1%;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+}
+
+p, li {
+    font-family: Calibri, sans-serif;
+}
+
+div > h1, h2, h3, p {
+    margin: 1%;
+}
+
+div > div > p{
+    font-weight: bold;
+    text-align: center;
+    width: 25%;
+    margin: auto;
+}
+
+form {
+    text-align: justify;
+}
+
+a {
+    margin-bottom: 1%;
+}
+
+legend {
+    margin-left: 2.5%;
+    text-align: justify;
+}

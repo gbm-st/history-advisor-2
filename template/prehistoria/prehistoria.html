@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Prehistoria</title>
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/fuzzy-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/logica.js') }}"></script>
+</head>
+<body onload="reloj()">
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>La Prehistoria</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-1">00:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="../static/fotos_1/1.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+        </div>
+        <p>La Prehistoria es la parte de la Historia que estudia la vida del hombre primitivo, desde su aparición en la Tierra, hasta la invención de la escritura. Abarca el periodo más largo del desarrollo de la humanidad, durante el cual se realizaron los primeros progresos, como la aparición del lenguaje y la domesticación de animales y plantas.
+        <br>Teniendo en cuenta los materiales utilizados en la confección de utensilios y armas, los grados culturales alcanzados y los modos de vida, la Prehistoria ha sido dividida en dos edades: edad de piedra y edad de los metales.</p>
+        <h2>1. La edad de piedra en la prehistoria</h2>
+        <p>Es la parte de la Prehistoria en la que el hombre utilizó preferentemente la piedra como material para hacer sus utensilios, herramientas, armas y otros instrumentos cotidianos. En esta edad se distinguen dos periodos importantes: el paleolítico y el neolítico.</p>
+        <div>
+            <img src="../static/fotos_1/2.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+        </div>
+        <h3>1.1 El periodo paleolítico</h3>
+        <p>En la prehistoria es el periodo de la piedra tallada. Comprende desde los orígenes de la historia humana hasta los 10 mil años a.C. En aquel tiempo la piedra fue el principal material que se usó para fabricar cuchillos, puntas, lanzas y raspadores. Unas veces se empleaba la piedra tal y como se encontraba en la naturaleza y otras veces eran talladas, con el auxilio de piedras mas duras que el sílex.
+        <br>El hombre paleolítico tenían las siguientes características:</p>
+        <ul>
+            <li>En este periodo de la prehistoria vivían en las cavernas o cuevas, por lo que se conocen también con el nombre de cavernario o troglodita.</li>
+            <li>Se alimentaban de raíces, frutos silvestres, semillas, etc. Cazaban animales salvajes y pescaban en los ríos y lagos. Eran recolectores, cazadores y pescadores.</li>
+            <li>Se cubrían el cuerpo con la piel de los animales que cazaban.</li>
+            <li>Aprendían a tallar la piedra para confeccionar sus utensilios y armas. Tallaban también los huesos y maderas con los cuales hacían punzones, arpones y puñales.</li>
+            <li>Se trasladaban permanentemente de un lugar a otro, en busca de alimento. Eran nómades o errantes.</li>
+            <li>Descubrieron el fuego, sea provocado por los rayos, lava volcánica, la inflamación del carbón o frotando el sílex y la pirita de hierro.</li>
+            <li>Se organizó en pequeños grupos llamados clanes. El clan estaba dirigido por el más fuerte.</li>
+            <li>En sus momentos de descanso dibujaban y pintaban en las paredes y techos de las cavernas. Estas obras de arte rupestre, que han llegado a nuestros tiempos, reproducían escenas de su vida cotidiana. Son famosas las pinturas rupestres de Altamira (España), descubiertas en 1879.</li>
+        </ul>
+        <h3>1.2 El periodo neolítico</h3>
+        <p>Es el periodo de la piedra pulida en la prehistoria. Comprende desde los 10 mil años a.C. hasta los 3 mil años a.C. Durante ese periodo ocurrieron cambios importantes que transformaron la vida humana.
+        <br>El hombre neolítico tenía las siguientes características:</p>
+        <ul>
+            <li>Empezó a construir sus primeras viviendas, generalmente toscas, abandonando paulatinamente las cavernas. Las viviendas más curiosas se levantaron sobre los pilotes hundidos de lagos de Alemania, Suiza e Italia. A estas construcciones se les llamad palafitos. También levantaron monumentos megalíticos, como los dólmenes (mesas de piedra) y los menhires (filas, círculos o hileras de piedras), posiblemente para rendir ciertos cultos.</li>
+            <li>Utilizó algunas fibras vegetales, como el lino en la elaboración de telas, que empezaron a utilizarse en la confección de vestidos, en lugar de las pieles de animales.</li>
+            <li>Aprendió a pulir la piedra para confeccionar sus utensilios, armas y herramientas. El pulido se realizaba limando la piedra con arena húmeda o con el roce de piedras más duras. Apareció por entonces el hacha con mango, que facilitó el talado de los árboles y la construcción de viviendas.</li>
+            <li>Descubrió la agricultura, en forma rudimentaria y casual, con la intervención de la mujer. Es posible que al transportar o al consumir los frutos silvestres, dejaron caer inadvertidamente, algunos de ellos en tierra húmeda y que al germinar la semilla, lo vieran crecer.</li>
+        </ul>
+        <p>De este modo se inicio el cultivo de los campos en la prehistoria. originalmente se emplearon palos puntiagudos para remover la tierra donde se arrojaban las semillas. Más tarde se invento el arado, tirado por animales.</p>
+        <ul>
+            <li>Domesticó algunos animales con el que organizó la ganadería actual. De este modo domestico a la oveja, a los perros, la cabra, el cerdo y el buey. Al final de este periodo apareció la rueda, revolucionando con ellos el intercambio y la comunicación.</li>
+            <li>Se hizo sedentario, gracias a la actividad agrícola y ganadera. En adelante dejó de ser errante porque la agricultura y la ganadería necesitaban de bastante cuidado y vigilancia en el campo. Naturalmente, tse cambio se operó inicialmente en pequeños grupos y paulatinamente se iría generalizando a otros.</li>
+            <li>Socialmente surgió una mayor organización. Los hombres que vivían de la tierra se concentraron en grupos cada vez mas grandes. Dentro del grupo se creó una autoridad. Así nacieron los dirigentes apoyados por una clase guerrera y los productores, que trabajaban la tierra para beneficio de todos.</li>
+            <li>Se inventó la ceramica mediante el endurecimiento de la arcilla, por acción calorífica del fuego.</li>
+        </ul>
+        <h2>2. La edad de los metales en la prehistoria</h2>
+        <div>
+            <img src="../static/fotos_1/3.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+        </div>
+        <p>La necesidad de disponer de materiales más duros que la piedra y la búsqueda de metales preciosos llevo al hombre a descubrir otros metales, cerca del año 4000 a.C. Este nuevo momento de la humanidad ha sido dividido en tres edades: edad de cobre, edad de bronce y edad de hierro.</p>
+        <h3>2.1 La edad de cobre (4000 a.C.)</h3>
+        <p>El cobre es el primer metal en reemplazar a la piedra. Su uso se difundió rápidamente debido a su fácil obtención y a su gran maleabilidad; es decir podía ser trabajado y modelado sin mayor dificultad. Ademas se le podía encontrar en estado puro, o sea, separado de otros minerales.
+        <br>Al aumentar la demanda del cobre, se tuvo que buscar en los yacimientos. Allí se encontraba mezclado con otros minerales. Para separarlo se recurrió al fuego. Nació así la metalurgía.</p>
+        <h3>2.2 La edad de bronce (3000 a.C.)</h3>
+        <p>La necesidad de endurecer el cobre indujo a una serie de ensayos de aleaciones con otros metales. Mezclando el 90% de cobre con el 10% de estaño se obtuvo el bronce. Con esta nueva aleación se comenzó a fabricar nuevas armas, ornamentos y utensilios.</p>
+        <h3>2.3 La edad de hierro (1500 a.C.)</h3>
+        <p>Con el conocimiento del hierro el hombre mejoró notablemente sus herramientas y armas. El dominio de la naturaleza se hizo con menos esfuerzo y la cultura alcanzó un notable desarrollo. Precisamente fueron los hititas los primeros en utilizarlo. Mas tarde fue conocido en Asia Menor y en Europa.
+        <br>El uso de este metal tuvo un doble efecto en la humanidad. Por un lado se comenzaron a crear industrias tales como la alfarería y la fabricación de instrumentos de metal. Nació así el comercio. Las poblaciones densas formaron ciudades y se amplía la cultura.</p>
+        
+    </div>
+    <!--  González, María y Guzmán, Jorge (2014, 26 de enero). La Prehistoria. Historia Universal. https://mihistoriauniversal.com/prehistoria/prehistoria  --> 
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Conteste las siguientes preguntas para evaluar su conocimiento.</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-2">00:00</p>
+            </div>
+        </div>
+        <form id="form1">
+            <fieldset>
+            <legend>En este periodo de la prehistoria el hombre vivía en las cavernas o cuevas:</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p1" name="." value="Verdadero">
+                        <label for="p1">Paleolítico</label>
+                
+                        <input type="radio" class="ms-3" id="p2" name="." value="Falso">
+                        <label for="p2">Neolítico</label>
+                
+                        <input type="radio" class="ms-3" id="p3" name="." value="Falso">
+                        <label for="p3">Edad de los metales</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(1, 1)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form2">
+            <fieldset>
+            <legend>¿Cuál fue el primer metal en reemplazar a la piedra?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p4" name="." value="Falso">
+                        <label for="p4">Hierro</label>
+                
+                        <input type="radio" class="ms-3" id="p5" name="." value="Falso">
+                        <label for="p5">Bronce</label>
+                
+                        <input type="radio" class="ms-3" id="p6" name="." value="Verdadero">
+                        <label for="p6">Cobre</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(1, 2)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form3">
+            <fieldset>
+            <legend>¿En qué periodo el hombre empezó a construir sus primeras viviendas?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p7" name="." value="Falso">
+                        <label for="p7">Paleolítico</label>
+                
+                        <input type="radio" class="ms-3" id="p8" name="." value="Falso">
+                        <label for="p8">Edad de los metales</label>
+                
+                        <input type="radio" class="ms-3" id="p9" name="." value="Verdadero">
+                        <label for="p9">Neolítico</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(1, 3)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form4">
+            <fieldset>
+            <legend>¿Cuál fue uno de los primeros animales en ser domesticado?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p10" name="." value="Falso">
+                        <label for="p10">Gato</label>
+                
+                        <input type="radio" class="ms-3" id="p11" name="." value="Verdadero">
+                        <label for="p11">Oveja</label>
+                
+                        <input type="radio" class="ms-3" id="p12" name="." value="Falso">
+                        <label for="p12">Conejo</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(1, 4)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form5">
+            <fieldset>
+            <legend>¿Qué metal mezclado con el cobre produce bronce?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p13" name="." value="Verdadero">
+                        <label for="p13">Estaño</label>
+                
+                        <input type="radio" class="ms-3" id="p14" name="." value="Falso">
+                        <label for="p14">Plomo</label>
+                
+                        <input type="radio" class="ms-3" id="p15" name="." value="Falso">
+                        <label for="p15">Hierro</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(1, 5)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <div></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" onclick="obtenerRespuestas(document.getElementById('form1'), document.getElementById('form2'), 
+            document.getElementById('form3'), document.getElementById('form4'), document.getElementById('form5'))">Enviar respuestas</button>
+        </div>
+    </div>
+</body>
+</html>

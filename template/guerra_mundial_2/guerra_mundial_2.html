@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Guerra Mundial</title>
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/fuzzy-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/logica.js') }}"></script>
+</head>
+<body onload="reloj()">
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Segunda Guerra Mundial</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-1">00:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="../static/fotos_3/1.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+        </div>
+        <p>A principios del siglo XX se manifestaba de manera evidente una fuerte pugna entre los países de primera potencia por la hegemonía mundial causando la Segunda Guerra Mundial.
+        <br>Este choque de potencias o mejor dicho choque de diferentes políticas de dominio mundial desencadeno  la Primera Guerra Mundial que culminó con el Tratado de Versalles (1919), cuyas pautas fueron dadas por Woodrow Wilson (Presidente de EE.UU.). El Tratado de Versalles en vez de poner fin a las pugnas o guerras entre las potencia, alimentaba el interés por otro conflicto de escalas globales que lamentablemente se hizo realidad y se le conoce como la Segunda Guerra Mundial.
+        <br>Se plantea que la principal causa para que estalle la 1ra y 2da guerras mundiales fue la necesidad de tener el control de las materias primas, mercados y mano de obra barata en todo el mundo. En esta lid también se incluyen estrategias para sacar fuera de competencia a los posibles rivales, en ese sentido la Corona Británica tenia vivo interés en impedir cualquier alianza de cooperación entre Alemania y Rusia y crear condiciones económicas, políticas e ideológicas para un enfrentamiento entre Alemania y Rusia y asegurar la destrucción mutua de ambos. Así el Reino Unido, corrección; la corona británica y la gran burguesía que representa, tendrían el dominio exclusivo de Europa.
+        <br>Durante el Periodo de Entreguerras (1920- 1939) el Reino Unido o Gran Bretaña permitió el acceso nazi al poder en Alemania sin defender a la Republica Demo Liberal de Weimar, el primer ministro ingles N. Chamberlain permitió descaradamente la expansión de la Alemania nazi hacia Europa centro oriental con su hipócrita “Política de Apaciguamiento” y el mismo N. Chamberlain permitió el rearme alemán conducido por nazis anti comunistas a ultranza. En suma todo estaba listo para que estalle la Segunda Guerra Mundial y las causas esenciales eran las mismas, la “Gran Depresión” fue el factor que agudizó las contradicciones.</p>
+        <h2>Concepto</h2>
+        <p>Las causas que provocaron la Segunda Guerra Mundial fueron las mismas que originaron la Primera Guerra Mundial: lucha por mercados y fuentes de materias primas (colonias y semicolonias) entre potencias mundiales.</p>
+        <h2>Causas y Factores</h2>
+        <p>Las zonas de influencia luego de la Primera Guerra Mundial generaron inestabilidad y pugnas, porque había disminuido considerablemente la importante de Inglaterra y Francia en la economía mundial, en cambio los monopolios norteamericanos se desarrollaban, siendo EE.UU. la potencia hegemónica en el mundo capitalista.
+            <br>Alemania, luego de la Primera Guerra Mundial, restauró su economía y su industria pesada con ayuda de capitales norteamericanos (Plan Dawes, Young).
+            <br>Las potencias que insurgen exigen un nuevo reparto del mundo, desarrollando políticas expansionistas:</p>
+        <h2>Alemania</h2>
+        <p>Cuando los nazis llegan al poder, en 1933 con Hitler como canciller, plantean abiertamente la formación de un gran imperio, reconstruyendo rápidamente su aparato militar. Ese mismo año Alemania se retira de la Liga de Naciones. En 1935 imponen el servicio militar obligatorio (prohibido por el Tratado de Versalles). En 1936 ocuparon Renania, región limítrofe con Francia, en 1938 se anexa Austria, también el sudeste pertenecientes a Checoslovaquia, en 1939.</p>
+        <div>
+            <img src="../static/fotos_3/2.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Hitler</p>
+        </div>
+        <h2>Italia</h2>
+        <p>En octubre de 1935, la Italia fascista, respaldada por el gobierno Francés de Laval y con el consentimiento de Inglaterra agredió Etiopia.</p>
+        <h2>Japón</h2>
+        <p>En septiembre de 1931, China fue atacada, los japoneses ocuparon Manchuria, Japón se retira en 1933 de la Liga de Naciones para continuar con su política de expansión. Se proyectaba conquistar el sudeste asiático y arrebatarle la hegemonía a EE.UU. en el pacifico.
+        <br>Producto de estas contradicciones se formaron dos bloques enemigos:</p>
+        <ul>
+            <li>Alemania, Italia, Japón (Eje) impulsando políticas anexionistas.</li>
+            <li>Inglaterra, Francia, EE.UU. (Aliados) que temían su influencia y control colonial.</li>
+        </ul>
+        <h2>Tratado de Versalles y la sociedad de naciones</h2>
+        <p>La Sociedad de Naciones con sede en Ginebra y el “Sistema Político de Versalles” implantado en Europa después de la Primera Guerra Mundial debieron impedir estos proyectos expansionistas para evitar nuevas conflagraciones; sin embargo esto no impidió el rearme, el afán revanchista y el expansionismo alemán permitió en la confederación de Munich (1938) por Inglaterra.</p>
+        <h2>Antecedentes</h2>
+        <div>
+            <img src="../static/fotos_3/3.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Rearme Alemán</p>
+        </div>
+        <p>El antecedente mas importante de la Segunda Guerra Mundial fue la guerra civil Española (1936-1939) en el cual se enfrentaron Republicanos (Liberales, socialistas, anárquicas, etc.) contra Falangistas (fascistas), donde participaron tambien las potencias europeas apoyando a cada bando.
+        <br>Francia y URSS apoyaron a los Republicanos en cambio Alemania e Italia apoyaron a los falangistas.
+        <br>El conflicto termino a favor de los falangistas o “Nacionalistas” españoles.
+        <br>Pensaron en atacar primero Europa occidental y luego la URSS del estado Alemán Nazi plantea firmar con la URSS un pacto de no agresión que significaba para la URSS mas tiempo para poder fortalecerse ante un inminente ataque alemán. En función a esto se firma el pacto Molotov-Ribbentrop de 1939 entre Alemania y la URSS.</p>
+        <h2>Proceso</h2>
+        <h3>A. Ofensiva de las potencias del EJE (Alemania, Italia y Japón)</h3>
+        <ul>
+            <li>Alemania aplica la Blitzkrieg(“guerra relámpago”) sobre Polonia, provocando la reacción de Francia e Inglaterra.</li>
+            <li>En 1940 Alemania ataca Holanda, Dinamarca y Noruega, violando su neutralidad, el objetivo era dominar el mar del Norte y cercar a Inglaterra.</li>
+            <li>Posteriormente Alemania invade Bélgica y ataca Francia; aplicando la “Operación Rat” y anulando la Línea Maginot logra su rendición. El Mariscal Petain con los alemanes instala un gobierno colaboracionista en Vichy. Charles de Gaulle proclama la resistencia desde Londres.</li>
+            <li>Se produce la Batalla de Inglaterra, ataque y bombardeo a Londres de la aviación alemana; Winston Churchill proclama la resistencia en Inglaterra. Entre tanto, Italia fracasa en su intento de invadir Grecia.
+                <ul>
+                    <li>En el frente oriental Alemania pese a haber firmado el Pacto de No Agresión con la URSS, la ataca llegando hasta Leningrado, sin embargo el Ejercito Rojo responde y logra vencer en Stalingrado luego de que Stalin proclamara la “Gran Guerra Patria” (lucha soviética contra el imperialismo y el fascismo) que marcó el inicio de la decadencia del ejercito alemán.</li>
+                    <li>En el oriente en 1941 Japón ataca Peral Harbour en Hawai, procediendo luego a conquistar el sudeste Asiático. </li>
+                </ul>
+            </li>
+        </ul>
+        <div>
+            <img src="../static/fotos_3/4.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Mapa de la Segunda Guerra Mundial</p>
+        </div>
+        <h3>B. Contraofensiva de los Aliados (EE.UU., Inglaterra y la URSS)</h3>
+        <ul>
+            <li>El Mariscal Montgomery (inglés) derrota a E. Rommel (alemán) en El Alamein recuperando el control de África del Norte y asegurando el control del Canal de Suez. Invasión a Italia en 1943.</li>
+            <li>Luego de la victoria soviética en Stalingrado se inicia el avance hacia Europa Central.</li>
+            <li>Realización de la “Operación Overlord” en 1944 por los aliados (Día “D”, 6 Junio 1944), que consistió en el desembarco de Normandia (Francia). Se abre un segundo frente contra Alemania.</li>
+            <li>El 2 de Mayo de 1945 Alemania capitula, luego de la invasión aliada sobre Berlín. El imperio Japonés es derrotado en las batallas de Coral, Midway y Guadalcanal perdiendo el control del Sudeste Asiático y el océano pacifico. En Agosto de 1945, Hiroshima y Nagasaki son bombardeados con bombas atómicas. El 2 de septiembre Japón capitula ante EE.UU.</li>
+        </ul>
+        <div>
+            <img src="../static/fotos_3/5.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Territorio ocupado por URSS</p>
+        </div>
+        <h2>Consecuencias de la Segunda Guerra Mundial</h2>
+        <p>La Segunda Guerra Mundial significó una gran mortandad para el pueblo europeo: 60 millones de personas; incluido los genocidios en el Sudeste Asiático por los Japoneses. Luego de esta terrible guerra imperialista hubo una gran baja de producción industrial europea y japonesa perjudicando principalmente a millones de trabajadores.</p>
+        <div>
+            <img src="../static/fotos_3/6.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Bomba atómica</p>
+        </div>
+        <p>La gran burguesía que provocó esta guerra mundial, no se perjudico en su poder económico ya que tenían capacidad para volver a reconstruir la producción industrial. El único perjudicado fue el pueblo.
+        <br>Las potencias aliadas decidieron definitivamente la división de Alemania en cuatro zonas: francesa, inglesa, estadounidense, soviética. Aunque luego se procede la formación de una Alemania Occidental (EE.UU., Francia e Inglaterra) y Alemania Oriental (URSS) debido a las diferencias entre EE.UU. y la URSS.
+        <br>Para evitar nuevos choques bélicos se decide la creación de la ONU que debería reemplazar ala desprestigiada Sociedad de Naciones. Este nuevo organismo es creado en la Conferencia de San Francisco siendo el Comité de Seguridad su órgano de mayor peso político a nivel mundial y compuesto por EE.UU., URSS, Francia, Inglaterra y China.
+        <br>Las potencias que surgieron luego de esta Segunda Guerra Mundial fueron EE.UU. y la URSS, que habían desarrollado 2 sistemas diferentes y opuestos, generando contradicciones y desatándose la “Guerra Fria” (1945-1991), algunos países con apoyo e influencia de la URSS instauran repúblicas populares (Polonia, Checoslovaquia, Rumanía, Yugoslavia, Hungría, etc.) también se produce una nueva revolución socialista en China. Tal desarrollo del socialismo, impulsa al capitalismo (EE.UU.), a desarrollar la ayuda económica a Europa Occidental desde 1947 (Plan Marshall), y a Japón (Plan Dodge) que renacen fundamentalmente como intento de detener el socialismo.
+        <br>Se desarrollan también las luchas de los pueblos oprimidos por su liberación: proceso de descolonización sin embargo lograron muchos una independencia política mas no económica.</p>
+        <div>
+            <img src="../static/fotos_3/7.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Mapa de Europa despues de la Segunda Guerra Mundial</p>
+        </div>
+    </div>
+
+    <!--  González, María y Guzmán, Jorge (2018, 7 de septiembre). Segunda Guerra Mundial. Historia Universal. https://mihistoriauniversal.com/edad-contemporanea/segunda-guerra-mundial  -->
+    
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Conteste las siguientes preguntas para evaluar su conocimiento.</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-2">00:00</p>
+            </div>
+        </div>
+        <form id="form1">
+            <fieldset>
+            <legend>Según la lectura, ¿cuál fue la principal causa para el estalle de la 1ra y 2da Guerras Mundiales?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 90%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p1" name="." value="Verdadero">
+                        <label for="p1">Control de las materias primas, mercados y mano de obra</label>
+                
+                        <input type="radio" class="ms-3" id="p2" name="." value="Falso">
+                        <label for="p2">Sacar fuera de competencia a los posibles rivales</label>
+                
+                        <input type="radio" class="ms-3" id="p3" name="." value="Falso">
+                        <label for="p3">Un enfrentamiento entre Alemania y Rusia</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(3, 1)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form2">
+            <fieldset>
+            <legend>¿En qué año llegaron los nazis al poder en Alemania?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p4" name="." value="Falso">
+                        <label for="p4">1935</label>
+                
+                        <input type="radio" class="ms-3" id="p5" name="." value="Falso">
+                        <label for="p5">1939</label>
+                
+                        <input type="radio" class="ms-3" id="p6" name="." value="Verdadero">
+                        <label for="p6">1933</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(3, 2)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form3">
+            <fieldset>
+            <legend>¿Qué países conformaban las potencias del Eje?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 70%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p7" name="." value="Falso">
+                        <label for="p7">China, Unión Soviética, Francia</label>
+                
+                        <input type="radio" class="ms-3" id="p8" name="." value="Falso">
+                        <label for="p8">Inglaterra, Francia, EE.UU.</label>
+                
+                        <input type="radio" class="ms-3" id="p9" name="." value="Verdadero">
+                        <label for="p9">Alemania, Italia, Japón</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(3, 3)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form4">
+            <fieldset>
+            <legend>¿Cuál de estas es una de acción realizada por los Aliados?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 85%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p10" name="." value="Falso">
+                        <label for="p10">Japón ataca Peral Harbour en Hawai</label>
+                
+                        <input type="radio" class="ms-3" id="p11" name="." value="Verdadero">
+                        <label for="p11">Realización de la “Operación Overlord”</label>
+                
+                        <input type="radio" class="ms-3" id="p12" name="." value="Falso">
+                        <label for="p12">Alemania invade Bélgica y ataca Francia, aplicando la “Operación Rat” </label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(3, 4)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form5">
+            <fieldset>
+            <legend>¿Cuál es una de las consecuencias de la Segunda Guerra Mundial?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 70%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p13" name="." value="Verdadero">
+                        <label for="p13">Proceso de descolonización</label>
+                
+                        <input type="radio" class="ms-3" id="p14" name="." value="Falso">
+                        <label for="p14">Creación de la Sociedad de Naciones</label>
+                
+                        <input type="radio" class="ms-3" id="p15" name="." value="Falso">
+                        <label for="p15">La caída del muro de Berlín.</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda(3, 5)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <div></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" onclick="obtenerRespuestas(document.getElementById('form1'), document.getElementById('form2'), 
+            document.getElementById('form3'), document.getElementById('form4'), document.getElementById('form5'))">Enviar respuestas</button>
+        </div>
+    </div>
+</body>
+</html>
