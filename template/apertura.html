@@ -16,27 +16,24 @@
 <body>
     <div>
         <div class="d-flex justify-content-between">
-            <h1>History Advisor</h1>
+            <h1>Pregunta de reflexión</h1>
         </div>
         <div>
-            <img src="static/Historia.jpg" class="rounded mx-auto d-block img-fluid text-center" alt="">
+            <img src="static/Stonehenge.jpg" class="rounded mx-auto d-block img-fluid text-center" alt="">
         </div>
-        <h2>Acerca De:</h2>
         <!-- <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p> -->
-        <p>Continuación del primer proyecto de la materia de Inteligencia Artificial. El tema de este proyecto es "Historia"; el objetivo de esta aplicación es
-            mostrarle al usuario un texto acerca de un periodo de la historia con el fin de que responda preguntas acerca del mismo. La aplicación, usando lógica difusa,
-            le asignará al usuario distintos textos con base a su desempeño en los cuestionarios, el tiempo de lectura y la cantidad de ayudas que se seleccionaron.
-        </p>
-        <p>En este avance de History Advisor se utilizará una red neuronal para obtener un modelo de personalidad con el que se puede medir
-            si un texto contiene el atributo 'Apertura' definido por 'Big Five personality traits'. Se le preguntará al usuario un tema relacionado con la historia y
-            se le pedirá que explique su respuesta. Con base al resultado obtenido, History Advisor determinará que tipo de texto es mas apropiado mostrarle al usuario.
+        <p style="font-size:120%;"> Imagine un periodo de la historia de la humanidad; el periodo y lugar elegidos se dejan a su preferencia.
+            Ahora piense que usted se encuentra en esa misma época.
+            ¿Cómo se ve usted en este periodo? ¿Cuáles serían las dificultades que se tendría que enfrentar a comparanción de la edad contemporánea en la que vive?
+            ¿Cómo cree que el entorno de esta época pasada afectaría a su identidad, en contraste con la persona que es usted en estos momentos?
         </p>
     </div>
     <div class="text-center">
-        <a href="apertura.html">
-            <button class="btn btn-success">Empezar</button>
-        </a>
+        <textarea id="textoApertura" name="textoApertura" rows="15" cols="100" style="resize:none;"></textarea>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-success" onclick="personTextJS()">Empezar</button>
     </div>
 </body>
 </html>

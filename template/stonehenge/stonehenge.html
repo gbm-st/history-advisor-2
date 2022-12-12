@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonehenge</title>
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/fuzzy-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/logica.js') }}"></script>
+</head>
+<body onload="reloj()">
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Stonehenge</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-1">00:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="../static/fotos_4/1.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+        </div>
+        <p>El impresionante círculo de gigantescas piedras erguidas que es Stonehenge encuentra en las tierras bajas del sur de Inglaterra, a unos 120 kilómetros de Londres. Es uno de los yacimientos arqueológicos más fascinantes, pero menos comprendidos en el mundo.</p>
+        <p>Stonehenge es sólo uno más de los muchos círculos de piedras que se construyeron en la Gran Bretaña neolítica. No obstante, este círculo de megalitos (piedras grandes) en concreto lleva cientos de años fascinando a los especialistas. Habiendo sido objeto de muchos mitos y supersticiones. Todos los que visitan el monumento hoy día quedan impresionado por las gigantescas piedras erguidas, un efecto que debió de ser mucho más apabullante para las personas del Neolítico que lo construyeron, hace 4.000 años.</p>
+        <h2>¿Que es Stonehenge?</h2>
+        <p>Stonehenge se construyó entre el final del periodo Neolítico y el comienzo de la Edad del Bronce, entre los años 2950 y 1600 a.C.. Y ciertamente es el ejemplo más conocido del tipo de monumentos megalíticos que por esas fechas se estaban construyendo por toda Europa Occidental. </p>
+        <p>En la actualidad está formado por 90 grandes piedras, aunque parece que a lo largo de los siglos han desaparecido unas 50 piedras.
+        <br>La imagen que la mayoría de la gente tiene de Stonehenge, la de un círculo de piedras erguidas que sirven de base a otras piedras horizontales o dinteles, es sólo parte de un monumento mucho más grande y complejo. </p>
+        <p>En el centro hay una serie de piedras azules dispuestas formando una pequeña herradura que rodean la piedra que sirvió de altar, el centro focal de Stonehenge. En torno a las piedras azules hay otra herradura formada por cinco gigantescos trilitos, cada uno consistente en dos inmensos pilares de piedra con un dintel igual de inmenso sobre ellos.</p>
+        <p>Los trilitos están rodeados por un círculo de pequeñas piedras azules erguidas, rodeadas a su vez por otro círculo. Este círculo exterior estuvo compuesto en el pasado por 30 grandes piedras erguidas y el mismo número de dinteles. Al igual que los trilitos, estaban hechos de una piedra llamada sarsen. Muchos de ellos todavía se conservan en pie. En torno al perímetro de esta zona central había un terraplén de tierra y una zanja.</p>
+        <h2>Los agujeros de Aubrey</h2>
+        <p>Justo en el interior del terraplén, los arqueólogos encontraron 56 agujeros excavados en el estrato de roca caliza que hay justo bajo el suelo; por motivos que nadie conoce realmente, los agujeros se rellenaron inmediatamente después de ser excavados. Estos agujeros se conocen como agujeros de Aubrey. En cuatro puntos, el anillo de agujeros se ve interrumpido por una piedra azul erguida llamada Station Stone. La entrada principal a la zona rodeada por el terraplén está marcada por una gran piedra llamada Heel Stone.</p>
+        <p>Stonehenge se construyó en varias etapas. La zanja, el terraplén y los agujeros de Aubrey excavados en la caliza se construyeron en torno a 2750 a.C.,. Durante los siglos siguientes Stonehenge permaneció con estas sencillas formas. Luego, en torno a 2100 a.C. se erigieron las cuatro Station Stones en medio de los agujeros de Aubrey y la Heel Stone. Hoy día sabemos que las piedras azules proceden de un lugar situado a unos 200 kilómetros de distancia, en las montañas de Gales, y que probablemente fueron transportadas por el agua sobre almadías durante gran parte de ese recorrido. No fue hasta cerca de un siglo después cuando se colocaron los gigantescos trilitos y el círculo de sarsens que lo rodea.</p>
+        <h2>La erección de las piedras</h2>
+        <div>
+            <img src="../static/fotos_4/2.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+            <p>Mapa de Stonehenge</p>
+        </div>
+        <p>Colocar estas grandes piedras en su sitio fue un notable logro de ingeniería. En primer lugar, desde 30 kilómetros de distancia se trajeron las piedras. Nadie sabe con seguridad cómo se hizo, pero parece que cuando el suelo estaba duro se transportaron sobre rodillos durante los meses de invierno. </p>
+        <p>Otra teoría supone que las piedras pudieron haber sido transportadas sobre trineos a lo largo de caminos especialmente construidos para ello. Una vez en el lugar adecuado, tenían que ser erigidas. Es probable que esto se lograra alzándolas hasta la vertical mediante un sistema de rampas, andamios y palancas, para luego encajarlas en agujeros excavados ex profeso. Toda la operación seguramente necesitó la fuerza de cientos de bueyes y personas.</p>
+        <p>Los dinteles fueron colocados en su lugar alzando un extremo de la piedra y calzándolo con troncos. Para luego repetir la operación con el otro extremo y así tantas veces como fueran necesarias para alcanzar la altura requerida, cuando la piedra era empujada sobre los pilares. Los antiguos constructores dejaron salientes de piedra en la parte superior de estos pilares, para que encajaran en huecos excavados en la parte inferior de los dinteles y así mantener en su sitio las piedras.</p>
+        <p>Los historiadores han calculado que se necesitaron unas mil personas para alzar las piedras más grandes y que esta tercera fase de construcción de Stonehenge necesitó dos millones de horas de trabajo en total</p>
+        <h2>Monumentos de memoria</h2>
+        <p>La región que rodea Stonehenge posee muchos monumentos que recordaban a la gente sus antepasados y jefes. Enterraban a sus líderes bajo montículos redondos o túmulos (barrow en inglés), a menudo acompañados por objetos de oro y bronce. Bush Barrow, a 1,6 kilometros al sur de Stonehenge, contenía el esqueleto de una persona alta junto a dos dagas de cobre, un hacha de bronce y algunos adornos de oro.</p>
+        <h2>Otras edificaciones en Gran Breataña</h2>
+        <p>Aproximadamente a 2,5 kilómetros de la entrada principal de Stonehenge se encuentra un terraplén conocido como «La avenida». Consistente en dos zanjas paralelas separadas entre sí unos 30 metros. Se creó un camino elevado entre ambas donde se colocó la tierra de la excavación.
+        <br>Unos 30 kilómetros al norte se encuentra Avebury, donde una zanja delimita un enorme recinto de 300 metros de ancho construido justo después de 3000 a.C. En el interior de Avebury, como en Stonehenge, hay un círculo de piedras sarsen, aunque están dispuestas de modo diferente. Avebury también es mucho más grande que Stonehenge.</p>
+        <p>Cerca de Avebury se encuentra el montículo artificial de tierra llamado Silbury Hill, construido aproximadamente a la vez que Stonehenge. Es muy probable que en la región existieran muchos monumentos semejantes. Pero a lo largo de los últimos 4.000 años fueron destruidos. Por esas fechas se estaban construyendo monumentos megalíticos por toda Europa occidental. Pequeños círculos de piedra son habituales en Inglaterra, Gales y Escocia, quizá como continuación de una tradición más antigua de construcción de círculos a base de piezas de madera clavadas en el suelo y que no han sobrevivido.</p>
+        <p>Al otro lado del canal de La Mancha, en Bretaña, en un lugar llamado Carnac, en la misma época que se construía Stonehenge se estaban creando muchas filas de miles de piedras erguidas. En un lugar hay siete filas paralelas de piedras, de las que todavía se yerguen 1.029, a lo largo de 1.130 metros. Cerca, en Locmariaquer, hay un enorme pilar de granito que antes de caerse tuvo 22 metros de altura.</p>
+        <div>
+            <img src="../static/fotos_4/3.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+            <p>Stonehenge foto aerea</p>
+        </div>
+        <h2>Los druidas y Stonehenge</h2>
+        <p>Existe una creencia errónea sobre Stonehenge, que sostiene que fue construido por sacerdotes celtas. Conocidos popularmente como druidas y descritos por los romanos que llegaron a Gran Bretaña. Esto no es más que una fantasía romántica sobre los orígenes de Stonehenge, que comenzó hace cerca de 300 años y todavía persiste en la actualidad. </p>
+        <p>Cada año, en el solsticio de verano, druidas modernos y otras personas que creen que las piedras poseen poderes místicos o religiosos se reúnen en Stonehenge para realizar rituales en el día de San Juan. Aunque estas creencias no se basan en ninguna evidencia arqueológica, el hecho de que los reúna Stonehenge refleja la mágica atracción que sienten todos los que ven este espectacular monumento.</p>
+        <h2>¿Por qué se construyó Stonehenge?</h2>
+        <p>Nadie conoce con seguridad el propósito do Stonehenge, aunque está claro que era un lugar de gran importancia para los habitantes neolíticos y de comienzos de la Edad del Bronce de la zona de alrededor. No parece que sus habitantes vivieran en él, pues en la zanja y entre las piedras sólo se han encontrado unos pocos enterramientos. Sin embargo, algo hizo que a lo largo de varios siglos los agricultores y ganaderos de la región dedicaran su tiempo y sus energías a edificar esta gigantesca construcción</p>
+        <p>En las décadas de 1950-1960, algunos historiadores sugirieron que Stonehenge pudo haber sido un observatorio o un medio primitivo para predecir acontecimientos astronómicos. De hecho, durante el solsticio de verano, el 21 ó 22 de junio, el sol amanece casi exactamente sobre primera Heel Stone.</p>
+        <p>Exceptuando este detalle, pocas pruebas más existen do que Stonehenge estuviera alineado con las estrellas y planetas; en la actualidad, la mayoría de los arqueólogos no aceptan la idea de que Stonehenge fuera un observatorio astronómico. En vez de ello consideran que era un lugar do reunión o zona ceremonial, destinada a proporcionar a los campesinos y ganaderos de la zona un poderoso sentido de comunidad. Servía como un visible y duradero recordatorio de los antepasados que habían reclamado el territorio donde vivían. Un poderoso jefe erigió las piedras más grandes. Que quería hacer de él el monumento más elaborado de la región, visible desde muy lejos en toda la llanura que lo rodea.</p>
+        <div>
+            <img src="../static/fotos_4/4.jpg" class="rounded mx-auto d-block img-fluid"  alt="">
+            <p>Stonehenge</p>
+        </div>
+    </div>
+    <!--   González, María y Guzmán, Jorge (2017, 23 de mayo). Stonehenge. Historia Universal. https://mihistoriauniversal.com/prehistoria/stonehenge   -->
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Conteste las siguientes preguntas para evaluar su conocimiento.</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-2">00:00</p>
+            </div>
+        </div>
+        <form id="form1">
+            <fieldset>
+            <legend>¿En qué periodo se construyó Stonehenge?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p1" name="." value="Verdadero">
+                        <label for="p1">Entre el periodo Neolítico y la Edad del Bronce</label>
+                
+                        <input type="radio" class="ms-3" id="p2" name="." value="Falso">
+                        <label for="p2">Al final del periodo Neolítico</label>
+                
+                        <input type="radio" class="ms-3" id="p3" name="." value="Falso">
+                        <label for="p3">Al final de la Edad de Bronce</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(1, 1)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form2">
+            <fieldset>
+            <legend>En cuatro puntos, el anillo de agujeros de Aubrey se ve interrumpido por una piedra azul erguida llamada: </legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p4" name="." value="Falso">
+                        <label for="p4">Face Stone</label>
+                
+                        <input type="radio" class="ms-3" id="p5" name="." value="Falso">
+                        <label for="p5">Heel Stone</label>
+                
+                        <input type="radio" class="ms-3" id="p6" name="." value="Verdadero">
+                        <label for="p6">Station Stone</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(1, 2)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form3">
+            <fieldset>
+            <legend>Cerca de Avebury se encuentra el montículo artificial de tierra llamado: </legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p7" name="." value="Falso">
+                        <label for="p7">La avenida</label>
+                
+                        <input type="radio" class="ms-3" id="p8" name="." value="Falso">
+                        <label for="p8">Carnac</label>
+                
+                        <input type="radio" class="ms-3" id="p9" name="." value="Verdadero">
+                        <label for="p9">Silbury Hill</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(1, 3)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form4">
+            <fieldset>
+            <legend>Existe la creencia que Stonehenge fue construido por sacerdotes celtas. Conocidos popularmente como: </legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p10" name="." value="Falso">
+                        <label for="p10">Hadas</label>
+                
+                        <input type="radio" class="ms-3" id="p11" name="." value="Verdadero">
+                        <label for="p11">Druidas</label>
+                
+                        <input type="radio" class="ms-3" id="p12" name="." value="Falso">
+                        <label for="p12">Bardos</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(1, 4)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form5">
+            <fieldset>
+            <legend>¿Por qué se construyó Stonehenge?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p13" name="." value="Verdadero">
+                        <label for="p13">Nadie conoce el propósito de Stonehenge</label>
+                
+                        <input type="radio" class="ms-3" id="p14" name="." value="Falso">
+                        <label for="p14">Fue un observatorio primitivo</label>
+                
+                        <input type="radio" class="ms-3" id="p15" name="." value="Falso">
+                        <label for="p15">Era un lugar de reunión o zona ceremonial</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(1, 5)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <div></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" onclick="obtenerRespuestas2(document.getElementById('form1'), document.getElementById('form2'),
+            document.getElementById('form3'), document.getElementById('form4'), document.getElementById('form5'))">Enviar respuestas</button>
+        </div>
+    </div>
+</body>
+</html>

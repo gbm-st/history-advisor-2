@@ -23,6 +23,10 @@ def home():
     """
     return render_template("inicio_aplicacion.html")
 
+@app.route('/apertura.html')
+def apertura():
+    return render_template("apertura.html")
+
 @app.route('/prehistoria/prehistoria.html')
 def prehistoria():
     return render_template("prehistoria/prehistoria.html")
@@ -34,6 +38,18 @@ def independencia_mexico():
 @app.route('/guerra_mundial_2/guerra_mundial_2.html')
 def guerra_mundial_2():
     return render_template("/guerra_mundial_2/guerra_mundial_2.html")
+
+@app.route('/stonehenge/stonehenge.html')
+def prehistoria_2():
+    return render_template("stonehenge/stonehenge.html")
+
+@app.route('/benito_juarez/benito_juarez.html')
+def independencia_mexico_2():
+    return render_template("benito_juarez/benito_juarez.html")
+
+@app.route('/revolucion_industrial/revolucion_industrial.html')
+def guerra_mundial_2_2():
+    return render_template("/revolucion_industrial/revolucion_industrial.html")
 
 #@app.route('/anylink')
 #def anylink():

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Revolución Industrial</title>
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/fuzzy-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/logica.js') }}"></script>
+</head>
+<body onload="reloj()">
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>La Revolución Industrial</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-1">00:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="../static/fotos_6/1.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+        </div>
+        <p>Se llama revolución industrial al proceso de extraordinario desarrollo y de radical transformación que se operó en la industria y el comercio, y que contribuyó a modificar la ciencia y la técnica, los medios de comunicación y de transporte, así como los usos, costumbres y las condiciones generales de la existencia humana. «Provocó, en los últimos ciento cincuenta años, adelantos de orden material que sobrepasan a los de toda la existencia anterior«, todo este proceso inicio desde la segunda mitad del siglo XVIII y, asimismo, durante el siglo XIX.</p>
+        <h2>Causas</h2>
+        <p>Ello se debió fundamentalmente :</p>
+        <ol>
+            <li>Al empleo intensivo de la maquina en la producción (resultado de la evolución científica y tecnológica).</li>
+            <li>A la inversión de fuertes capitales (capitalismo industrial); es decir, que se unió la ciencia al capital.</li>
+            <li>Al deseo de mejorar los niveles de vida de la población.</li>
+            <li>A un excesivo afán de lucro de parte de los empresarios.</li>
+        </ol>
+        <p>Este portentoso avance técnico-económico transformó profundamente las condiciones de vida de la sociedad contemporánea, pues, contribuyó grandemente al progreso de la humanidad; pero, asimismo, creó también serios problemas de carácter social, agudos conflictos de clases, los mismos que mantienen aun su vigencia hasta los tiempos actuales.
+        <br>La Revolución Industrial tiene sus antecedentes en la portentosa Era del Maquinismo, esto es, en aquella época del formidable desarrollo de las máquinas, de los instrumentos mecánicos, con miras a ser empleados en la producción en gran volumen y en serie. Ello originaría la mecanización industrial.</p>
+        <h2>La Era del Maquinismo</h2>
+        <p>El maquinismo es un fenómeno económico-social que consiste en el exagerado empleo de la máquina en la industria, a tal extremo que los instrumentos mecánicos han reemplazado al hombre en la producción.
+        <br>«El maquinismo modificó, fundamentalmente, la técnica industrial, los medios de comunicación y de transporte, así como la organización comercial, los usos y costumbres y las condiciones generales de la existencia diaria. Provocó, así, en los últimos 150 años, adelantos de orden material que sobrepasan a los de toda la historia anterior».</p>
+        <h2>Etapas de la Revolución Industrial</h2>
+        <p>Distinguimos dos etapas en el desarrollo de la revolución industrial, a saber:</p>
+        <h3>La Primera Revolución Industrial</h3>
+        <p>La Revolución Industrial, en su primera etapa, se caracterizó por los considerables logros alcanzados en la agricultura, los mismos que estuvieron relacionados con las nuevas técnicas del cultivo, los modernos sistemas de irrigación, así como el empleo de abonos; todo ello unido a eficaces y avanzados instrumentos de labranza como a la mejora en la cría de ganado.
+        <br>Pero mucho más trascendente que la «revolución agrícola» fue la rápida y vigorosa expansión de la industria británica a partir de 1750, fecha que marca precisamente los inicios de esta primera etapa, en especial de la industria textil. ello se debió a la serie de inventos mecánicos, en especial el de la máquina de vapor inventado por James Watt, cuya energía ponía en funcionamiento al telar mecánico, a la vez que también fue empleado en las minas y el transporte, como veremos a más adelante.</p>
+        <div>
+            <img src="../static/fotos_6/2.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Máquina de Vapor de Watt</p>
+        </div>
+        <h3>La Segunda Revolución Industrial</h3>
+        <p>Surge a partir de 1850, esto es, cien años después de la iniciación de la Revolución Industrial. Se caracteriza esta etapa por la consolidación y el formidable desarrollo del maquinismo, como, igualmente, por la vigorización del capitalismo industrial; todo ello generaría, en consecuencia, el sorprendente auge de la Gran Industria. «La superioridad técnica de los países occidentales se acrecentó en la segunda mitad del siglo XIX, permitiéndoles ejercer una gran influencia política, económica o cultural sobre el resto de la humanidad».
+        <br>Elementos que caracterizan a la segunda revolución industrial</p>
+        <ol>
+            <li>La investigación científica se orienta, mayormente, a la industria.</li>
+            <li>Descubrimiento y explotación de nuevas fuentes de riquezas como la electricidad y el petróleo.</li>
+            <li>Se pasa de la «Era del Hierro» a la «Era del acero y el petróleo».</li>
+            <li>El progreso tecnológico converge también hacia el campo de la química y la Biología.</li>
+            <li>Mayor concentración de capitales (capitalismo industrial), a la vez que surgen los monopolios.</li>
+            <li>Las grandes empresas capitalistas reemplazan a las empresas personales.</li>
+            <li>En el campo de la electricidad, nuevas industrias compiten en Inglaterra, Estados Unidos de América y Alemania.</li>
+            <li>Se produce una formidable expansión tanto de los medios de transporte como de los de comunicación.</li>
+        </ol>
+        <h2>Principales inventos y descubrimientos</h2>
+        <div>
+            <img src="../static/fotos_6/3.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Automovil de vapor de Cugnot</p>
+        </div>
+        <p>Los principales inventos y descubrimientos de carácter científico y tecnológico que contribuyeron a la mecanización de la industria y, en consecuencia, a su formidable desarrollo hasta finalizar el siglo XIX, fueron numerosos y variados e hicieron su aparición o se produjeron, mayormente, en Inglaterra, erigida, en la más grande potencia industrial y comercial del mundo, en el primer centro fabril del Orbe. Y, desde fines del pasado siglo, experimento también Estados Unidos de América un inusitado y portentoso desarrollo de su industria hasta rivalizar con Inglaterra. Poco después entraría en la escena Alemania, cuyos progresos inmensos sorprenderían al mundo desde las primeras décadas del presente siglo.
+        <br>Damos a continuación algunos de tales progresos científicos y tecnológicos:</p>
+        <ol>
+            <li>Las máquinas para desmontar, hilar y tejer algodón.</li>
+            <li>La máquina de vapor, cuya fuerza generada por el vapor de agua se convertía en una nueva fuente de energía, y que una vez perfeccionada por su inventor, James Watt, tuvo tres principales aplicaciones: en la industria textil, la minería y los transportes, mediante el empleo del telar mecánico impulsado por la máquina de vapor, el barco de vapor y la locomotora de vapor (ferrocarril).</li>
+            <li>El uso de la electricidad, cuya base lo constituye el motor eléctrico, origen de los tranvías eléctricos, las locomotoras eléctricas y el alumbrado eléctrico.</li>
+            <li>La invención del telégrafo, el teléfono y la radiotelegrafía.</li>
+            <li>La invención del motor de explosión, mas liviano, que utilizó el petróleo al comienzo y, luego, la gasolina, ello originaria, asimismo, una revolución en los medios de transporte al hacer su aparición el automóvil, el avión, el dirigible, el submarino, etc.</li>
+            <li>La sustitución del hierro por el acero.</li>
+            <li>La inversión de los productos sintéticos.</li>
+            <li>La invención de la dinamita.</li>
+            <li>La invención del cinematógrafo y de los aparatos de refrigeración</li>
+            <li>La invención de la máquina de coser.</li>
+            <li>La construcción de las vías ferreas y redes camineras.</li>
+            <li>La construcción de barcos mercantes y de guerra, etc.</li>
+        </ol>
+        <div>
+            <img src="../static/fotos_6/4.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Buque de vapor de ruedas</p>
+        </div>
+        <h2>Consecuencias de la Revolución Industrial</h2>
+        <p>Las principales consecuencias de la Revolución industrial, fueron las siguientes:</p>
+        <ul>
+            <li>La Revolución Industrial constituyó el origen de la Sociedad Contemporánea, es decir, que originó ella profundos cambios en la vida de los pueblos, tanto en el orden económico y social como en el político, científico, cultural, desde fines del siglo XVIII hasta el presente.</li>
+            <li>Aumentó, en forma extraordinaria, la riqueza del mundo, y aunque los beneficiados fueron mayormente los industriales y comerciantes, también los pobres mejoraron algo en sus niveles de vida, tanto en lo relacionado con los salarios, la alimentación y el vestido como con la educación y la cultura.</li>
+            <li>Se acrecentó considerablemente la población del mundo. Así, en el siglo XIX, Europa pasó de 175,000,000 de habitantes a 400,000,000; Estados Unidos de América, de 5,000,000 a 150,000,000; Argentina, de 4,000,000 a 21,000,000.</li>
+            <li>Se produjo una mayor expansión colonial. Ello obedeció al propósito de abrir nuevos mercados como, fundamentalmente, a obtener materias primas para la floreciente industria de sus pueblos.</li>
+            <li>Nace el capitalismo industrial, a la vez que se consolida el poder de la burguesía capitalista.</li>
+            <li>Surge una producción masiva y en serie de artículos manufacturados, a la vez que la agricultura mecanizada brinda un rendimiento extraordinario; ello contribuye a abaratar los precios y a facilitar su adquisición en mayor volumen.</li>
+            <li>Nace una nueva sociedad. La sociedad Industrial, a base de la existencia de dos clases sociales de antagónica posición: la capitalista industrial y la proletaria u obrera.</li>
+            <li>Surgen agudos problemas de carácter social, emanados precisamente de los conflictos de clases (lucha de clases), es decir, de la pugna surgida entre los proletarios u obreros y los capitalistas o industriales.</li>
+        </ul>
+    </div>
+
+    <!--   González, María y Guzmán, Jorge (2014, 22 de octubre). La Revolución Industrial. Historia Universal. https://mihistoriauniversal.com/edad-contemporanea/revolucion-industrial   -->
+    
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Conteste las siguientes preguntas para evaluar su conocimiento.</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-2">00:00</p>
+            </div>
+        </div>
+        <form id="form1">
+            <fieldset>
+            <legend>¿Cuál no es una causa de la Revolución Industrial?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 90%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p1" name="." value="Verdadero">
+                        <label for="p1">El deseo de mejorar los niveles de calidad de los productos</label>
+                
+                        <input type="radio" class="ms-3" id="p2" name="." value="Falso">
+                        <label for="p2">La inversión de fuertes capitales</label>
+                
+                        <input type="radio" class="ms-3" id="p3" name="." value="Falso">
+                        <label for="p3">El empleo intensivo de la maquina en la producción</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(3, 1)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form2">
+            <fieldset>
+            <legend>Es un fenómeno que consiste en el exagerado empleo de la máquina en la industria: </legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p4" name="." value="Falso">
+                        <label for="p4">Industria</label>
+                
+                        <input type="radio" class="ms-3" id="p5" name="." value="Falso">
+                        <label for="p5">Revolución</label>
+                
+                        <input type="radio" class="ms-3" id="p6" name="." value="Verdadero">
+                        <label for="p6">Maquinismo</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(3, 2)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form3">
+            <fieldset>
+            <legend>La Primera Revolución Industrial se caracterizó por: </legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 70%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p7" name="." value="Falso">
+                        <label for="p7">Maquinismo</label>
+                
+                        <input type="radio" class="ms-3" id="p8" name="." value="Falso">
+                        <label for="p8">Ganadería</label>
+                
+                        <input type="radio" class="ms-3" id="p9" name="." value="Verdadero">
+                        <label for="p9">Agricultura</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(3, 3)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form4">
+            <fieldset>
+            <legend>La Segunda Revolución Industrial se caracterizó por:</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 85%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p10" name="." value="Falso">
+                        <label for="p10">Ganadería</label>
+                
+                        <input type="radio" class="ms-3" id="p11" name="." value="Verdadero">
+                        <label for="p11">Maquinismo</label>
+                
+                        <input type="radio" class="ms-3" id="p12" name="." value="Falso">
+                        <label for="p12">Agricultura</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(3, 4)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form5">
+            <fieldset>
+            <legend>¿Cuál no es una consecuencia de la Revolución Industrial?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 70%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p13" name="." value="Verdadero">
+                        <label for="p13">Disminuyó la población mundial</label>
+                
+                        <input type="radio" class="ms-3" id="p14" name="." value="Falso">
+                        <label for="p14">Aumentó la riqueza del mundo</label>
+
+                        <input type="radio" class="ms-3" id="p15" name="." value="Falso">
+                        <label for="p15">Se produjo una mayor expansión colonial</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(3, 5)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <div></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" onclick="obtenerRespuestas2(document.getElementById('form1'), document.getElementById('form2'),
+            document.getElementById('form3'), document.getElementById('form4'), document.getElementById('form5'))">Enviar respuestas</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benito Juárez</title>
+    <!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/fuzzy-min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='/logica/logica.js') }}"></script>
+</head>
+<body onload="reloj()">
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Benito Juárez</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-1">00:00</p>
+            </div>
+        </div>
+        <div>
+            <img src="../static/fotos_5/1.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+        </div>
+        <p>Benito Juárez fue presidente de México, a quien se deben las primeras medidas secularizadoras de corte liberal del Estado mexicano. En la segunda mitad del siglo XIX, sus leyes de reforma provocaron, por una parte, la reacción de las fuerzas conservadoras internas, predominantes desde la independencia y continuadoras del sistema colonial; por otra, una intervención extranjera, que se concretó en la invasión francesa y la imposición, por Napoleón III, de Maximiliano de Austria como emperador de México. Benito Juárez, el impulsor de la reforma, dirigió victoriosamente la resistencia y trató de sentar las bases para el funcionamiento, en México, de un sistema liberal en un Estado de derecho.</p>
+        <h2>Infancia</h2>
+        <p>Benito Pablo Juárez García nació el 21 de marzo de 1806 en San Pablo Guelatao, una pequeña aldea de la sierra de Oaxaca en la que sólo vivían veinte familias de indios zapotecas. En 1809 murió su padre, Marcelino Juárez, y poco después, de parto, su madre, Brígida García. Benito y sus dos hermanas, Josefa y Rosa, fueron recogidos por sus abuelos paternos y, a la muerte de éstos, quedaron al cuidado de Bernardino Juárez, su tío, quien dio a Benito sus primeras nociones de castellano y le puso a trabajar como pastor de su rebaño de ovejas. En diciembre de 1818, a los doce años de edad, Benito perdió una de las ovejas de su tío y ante el temor de que por ello se incrementaran los frecuentes malos tratos a que le sometía, huyó de San Pablo Guelatao y a pie, en compañía de unos arrieros, llegó hasta Oaxaca. En la capital del estado se refugió en casa del español Antonio Maza, donde su hermana Josefa estaba empleada como cocinera. Al cabo de tres semanas, Benito ya había encontrado acomodo como empleado en el servicio doméstico del fraile lego franciscano Antonio de Salanueva.</p>
+        <h2>Educación</h2>
+        <div>
+            <img src="../static/fotos_5/2.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Benito Juárez</p>
+        </div>
+        <p>Salanueva descubrió las cualidades intelectuales de Benito, le ayudó a completar sus escasos conocimientos de castellano y le proporcionó numerosas lecturas, especialmente vidas de santos. En 1821, cuando cumplió los quince años, su padrino Salanueva patrocinó el ingreso del muchacho en el seminario de Oaxaca, donde cursó estudios con las máximas calificaciones. En 1828, cuando tenía que iniciar la etapa de recepción de órdenes y con la excusa de que aún no tenía la edad exigida, dejó el seminario y pasó al recién establecido Instituto de Ciencias y Artes del Estado, una institución no controlada por la Iglesia y, por ello, muy mal vista por los sectores conservadores de la ciudad de Oaxaca, que la acusaban de pervertir a la juventud.
+        <br>En el instituto estudió derecho, entró en contacto con las ideas liberales, sobre todo a través del grupo liderado por Miguel Méndez, también de la etnia zapoteca y procedente de la sierra, y antes de terminar la carrera fue nombrado profesor de plantel de física.</p>
+        <h2>Inicios en la política</h2>
+        <p>En 1831 fue elegido regidor del ayuntamiento de la ciudad de Oaxaca y, tres años después, diputado del Congreso de su estado. En 1834, luego de una brillante disertación, la corte de justicia le otorgó por unanimidad el título de abogado y poco después se encargaba de defender a los habitantes del pueblo de Loxicha, enfrentados con su párroco por los presuntos abusos de éste. Era el momento en que, tras una devastadora peste de cólera, los liberales tomaron el poder e intentaron suprimir los privilegios del ejército y de la Iglesia. Sin embargo, el general Antonio López de Santa Anna, que había apoyado el movimiento liberal, se alzó en armas contra él y, con el lema «Religión y fueros», se hizo nuevamente con la presidencia de la república. La participación de Juárez en el caso de Loxicha y la reacción conservadora le obligaron a apartarse durante unos años de las actividades públicas.</p>
+        <h2>Guerra con EE.UU, tratado de Guadalupe-Hidalgo</h2>
+        <p>En 1843 Benito Juárez contrajo matrimonio con Margarita Maza, diecisiete años menor que él e hija de Antonio Maza, el español en cuya casa se había refugiado cuando huyó de su pueblo. Dos años antes, en 1841, había aceptado el cargo de juez civil y de hacienda de Oaxaca, con lo que regresaba a la política, que en adelante le ocuparía por completo. Fue sucesivamente secretario de gobierno de Oaxaca, vocal suplente de la Asamblea, fiscal del Tribunal Superior y diputado en el Congreso local. En 1846, al perder el poder los conservadores, fue cogobernador de su estado y, poco después, participó en el Congreso Federal que tuvo que hacer frente a una de las peores crisis de la historia de México: la guerra contra los Estados Unidos. Para afrontar los gastos bélicos, propuso al Congreso hipotecar o vender en pública subasta los bienes de las manos muertas, lo que anunciaba su futura política de desamortización. Tras la conquista de la Ciudad de México por las tropas estadounidenses, fue nombrado gobernador interino de Oaxaca. Durante este período, que duró casi dos años, el ejército invasor impuso la firma del Tratado de Guadalupe-Hidalgo, por el que México perdía en favor de los Estados Unidos más de la mitad de su territorio. La derrota, la humillación y la conciencia del poderío del vecino del norte provocaron el fortalecimiento del nacionalismo mexicano y el replanteamiento del futuro del país. Cristalizaron así dos tendencias políticas: la conservadora proponía la recuperación del estilo de vida colonial, lo que implicaba la alianza con las potencias europeas y el establecimiento de la monarquía en México; la liberal, por el contrario, proponía la ruptura con el pasado, la república federal y el entendimiento con los Estados Unidos.</p>
+        <div>
+            <img src="../static/fotos_5/3.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Guerra México – EEUU</p>
+        </div>
+        <h2>Lucha por el gobierno</h2>
+        <p>En 1849, terminada la etapa de interinato, Benito Juárez fue reelegido gobernador de Oaxaca sin oposición y desempeñó el cargo hasta 1852, en que finalizó el período constitucional establecido. A continuación fue nombrado rector del instituto, puesto que desempeñaba cuando en 1853 el general Santa Anna se hizo nuevamente con el poder. Juárez, que como gobernador de Oaxaca había ordenado el apresamiento del entonces fugitivo Santa Anna si penetraba en el territorio bajo su jurisdicción, fue rápidamente detenido y encarcelado en las «tinajas» o celdas inundadas de San Juan de Ulúa. Más tarde, con un pasaporte de desterrado a Europa, viajó a La Habana y, desde allí, a Nueva Orleans, donde se encontraba un importante grupo de exiliados liberales mexicanos. Allí trabajó como impresor y como torcedor de tabaco.
+        <br>Sobre la base del Plan de Ayutla, hecho público en 1854, los liberales tomaron el poder en el verano de 1855 y Juárez regresó a México para encargarse de los ministerios de Instrucción Pública y de Justicia y Asuntos Eclesiásticos. Un mes y medio después de su nombramiento apareció la Ley de Administración de Justicia o Ley Juárez, que suprimía los fueros especiales para el clero y el ejército y que inauguraba la reforma. La dura reacción de los conservadores, el clero y los militares provocó un cambio de gobierno en favor de los moderados. Juárez, que había sido ministro durante dos meses escasos, volvió a Oaxaca como gobernador del estado. Mientras, los liberales moderados continuaban la reforma y en febrero de 1857 promulgaban la nueva Constitución, que la completaba.</p>
+        <h2>Benito Juárez toma el poder</h2>
+        <p>En noviembre de 1857, después de haber sido elegido gobernador de Oaxaca mediante voto directo, Juárez fue nombrado ministro de Gobernación y, tras las inmediatas elecciones generales, presidente de la Suprema Corte de Justicia, lo que de acuerdo con la Constitución le convertía en vicepresidente de la república y sucesor del presidente Ignacio Comonfort. Sin embargo, Comonfort pactó con los conservadores, Juárez fue encarcelado durante unos pocos días y finalmente, el 11 de enero de 1858, el general conservador Félix Zuloaga depuso a Comonfort, que salió hacia el extranjero, y se proclamó presidente. Benito Juárez alzó la bandera de la legalidad y exigió la presidencia, que constitucionalmente le correspondía dada la ausencia de Comonfort. Se retiró hacia Guanajuato, donde declaró establecido su gobierno, pero la ofensiva conservadora le obligó a retirarse hasta el puerto de Manzanillo, en la costa del Pacífico, donde el 11 de abril embarcó con rumbo a Panamá. Atravesó el istmo, y después de pasar por La Habana y Nueva Orleans, el 4 de mayo de 1858 llegó finalmente a Veracruz, donde estableció su gobierno.</p>
+        <h2>Inicio de la guerra de reforma</h2>
+        <p>Se inició así la guerra de Reforma, que se preveía larga y costosa. Juárez, por una parte, buscó el apoyo de los Estados Unidos, que lo condicionaron a la concesión de derechos de paso por el istmo de Tehuantepec y al permiso para construir un ferrocarril desde Texas hasta un puerto del golfo de California; por otra, amplió el contenido liberal de la Constitución de 1857 no sólo para obtener apoyos políticos, sino también para sufragar los gastos de la guerra y doblegar el poder eclesiástico: nacionalizó los bienes de la Iglesia y los cementerios, suprimió las órdenes monásticas, implantó el registro civil y separó el Estado de la Iglesia. Por el Tratado MacLane-Ocampo, que nunca llegó a ser ratificado, el gobierno de Juárez, a cambio del reconocimiento diplomático, de apoyo político y de ayuda económica, concedía a los Estados Unidos las vías de comunicación que deseaba y permitía que fueran protegidas por tropas estadounidenses. Después de casi tres años de guerra, el 11 de enero de 1861 Juárez entraba vencedor en la Ciudad de México y era nombrado presidente efectivo de un país agotado y devastado.</p>
+        <h2>La lucha contra la intervención francesa</h2>
+        <p>El pago de la deuda externa absorbía la casi totalidad del producto de las aduanas del Pacífico y el 85 % de lo que aportaban las del golfo, hecho que unido a la necesidad de reconstruir el país llevó a que Juárez decretara el 17 de julio de 1861 la suspensión por dos años de los pagos de la deuda. La doctrina Monroe —«América para los americanos», o la negativa estadounidense a la intervención europea en América— había quedado sin defensores debido a que los Estados Unidos empleaban todas sus energías en la guerra de Secesión, iniciada a principios de 1861. Al interés por el cobro de la deuda y la presión de los conservadores mexicanos exiliados en Europa se unieron los deseos de Napoleón III de obtener una área de influencia francesa en América y detener la expansión anglosajona mediante un imperio conservador latino. Todo ello condujo a que Gran Bretaña, España y Francia acordaran intervenir militarmente en México. Las tropas europeas se reunieron en Veracruz en enero de 1862, pero Juárez logró entablar negociaciones y consiguió la retirada de España y Gran Bretaña. Los franceses, más interesados en la conquista y en el predominio conservador que en la resolución del conflicto de la deuda, avanzaron hacia la Ciudad de México y la ocuparon en junio de 1863, cuando Juárez ya había instalado su gobierno en San Luis Potosí y había movilizado un ejército de 38.000 hombres.</p>
+        <div>
+            <img src="../static/fotos_5/4.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Maximiliano de Austria</p>
+        </div>
+        <p>Napoleón III ofreció la corona mexicana a Maximiliano de Austria, hermano del emperador Francisco José I. Maximiliano llegó a la Ciudad de México en junio de 1864. Mientras, Juárez y su gobierno se batían en retirada y terminaban refugiándose en Paso del Norte —la actual Ciudad Juárez—, donde se expidió un decreto que, en virtud del estado de guerra, prorrogaba el mandato presidencial indefinidamente. En 1865 el fin de la guerra de Secesión permitió que los Estados Unidos volvieran a interesarse por la política exterior y por la aplicación de la doctrina Monroe; en 1866 Napoleón III, cada vez más comprometido en la política europea, más presionado por los Estados Unidos y con menores posibilidades de victoria, decidió retirar su ejército de México. Maximiliano intentó obtener ayuda de su hermano, mientras su esposa, la emperatriz Carlota, hija de Leopoldo I de Bélgica, viajaba a Europa y se entrevistaba infructuosamente con Napoleón III y con el papa. El ejército francés se retiró a principios de 1867, Maximiliano fue hecho prisionero y fusilado en Querétaro y Juárez entró de nuevo en la capital el 15 de julio.</p>
+        <h2>División de los liberales</h2>
+        <p>En agosto de 1867 Benito Juárez convocó elecciones y presentó cinco enmiendas a la Constitución para reforzar los poderes presidenciales. Fue reelegido sin dificultad, pero las modificaciones constitucionales provocaron una amplia oposición, incluso entre sus partidarios. Juárez, que aparte del decreto de prórroga del mandato presidencial de Paso del Norte siempre se había distinguido por su escrupuloso respeto a la legalidad, trataba por segunda vez de incrementar su poder mediante procedimientos poco ortodoxos, lo que creó una crisis de confianza en su administración y provocó la escisión de los liberales en tres grupos: el encabezado por el general y futuro dictador Porfirio Díaz, que en aquel momento defendía «el sagrado principio de la insurrección», el liderado por Sebastián Lerdo de Tejada, que había sido el principal colaborador de Juárez, y el que dirigía el propio presidente.</p>
+        <h2>Muerte de Benito Juárez</h2>
+        <p>Ya enfermo, Benito Juárez decidió presentarse nuevamente como candidato a la presidencia en 1871. Después de una dura campaña obtuvo la reelección, pero la oposición se manifestó con energía y se produjeron varias rebeliones que pudieron ser sofocadas. Sin embargo, Porfirio Díaz, con el Plan de La Noria, provocó un alzamiento que tardó cuatro meses en ser controlado. El 18 de julio de 1872, cuando el general Díaz se había vuelto a sublevar en el noroeste del país, un ataque al corazón terminó con la vida de Benito Juárez, el hombre que con su capacidad de organización y resistencia sentó las bases del México moderno.</p>
+        <div>
+            <img src="../static/fotos_5/5.jpg" class="rounded mx-auto d-block img-fluid" alt="">
+            <p>Funeral de Benito Juárez</p>
+        </div>
+    </div>
+
+    <!--   Cruz, Valeria y Martínez, Diego (2016, 29 de mayo). Benito Juárez. Historia de México. https://lahistoriamexicana.mx/biografia/benito-juarez   -->
+
+    <div>
+        <div class="d-flex justify-content-between">
+            <div style="width: 50%;">
+                <h1>Conteste las siguientes preguntas para evaluar su conocimiento.</h1>
+            </div>
+            <div></div>
+            <div style="width: 10%;" class="d-flex justify-content-between">
+                <p id="tiempo-reloj-2">00:00</p>
+            </div>
+        </div>
+        <form id="form1">
+            <fieldset>
+            <legend>¿Cual fue la fecha de nacimiento de Benito Juárez?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p1" name="." value="Verdadero">
+                        <label for="p1">21 de marzo de 1806</label>
+                
+                        <input type="radio" class="ms-3" id="p2" name="." value="Falso">
+                        <label for="p2">15 de marzo de 1805</label>
+                
+                        <input type="radio" class="ms-3" id="p3" name="." value="Falso">
+                        <label for="p3">21 de febrero de 1807</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(2, 1)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form2">
+            <fieldset>
+            <legend>¿En qué año se le otorgó a Benito Juárez el título de abogado?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p4" name="." value="Falso">
+                        <label for="p4">1831</label>
+                
+                        <input type="radio" class="ms-3" id="p5" name="." value="Falso">
+                        <label for="p5">1832</label>
+                
+                        <input type="radio" class="ms-3" id="p6" name="." value="Verdadero">
+                        <label for="p6">1834</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(2, 2)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form3">
+            <fieldset>
+            <legend>¿Hasta qué año Benito Juárez desempeñó el cargo de gobernador de Oaxaca?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 50%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p7" name="." value="Falso">
+                        <label for="p7">1850</label>
+                
+                        <input type="radio" class="ms-3" id="p8" name="." value="Falso">
+                        <label for="p8">1849</label>
+                
+                        <input type="radio" class="ms-3" id="p9" name="." value="Verdadero">
+                        <label for="p9">1852</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(2, 3)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form4">
+            <fieldset>
+            <legend>¿En qué año empezó la presidencia de Benito Juárez?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 80%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p10" name="." value="Falso">
+                        <label for="p10">1855</label>
+                
+                        <input type="radio" class="ms-3" id="p11" name="." value="Verdadero">
+                        <label for="p11">1858</label>
+                
+                        <input type="radio" class="ms-3" id="p12" name="." value="Falso">
+                        <label for="p12">1860</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(2, 4)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <form id="form5">
+            <fieldset>
+            <legend>¿Cual fue la fecha de fallecimiento de Benito Juárez?</legend>
+            <div class="d-flex justify-content-between">
+                <div style="width: 80%;">
+                    <div>
+                        <input type="radio" class="ms-3" id="p13" name="." value="Verdadero">
+                        <label for="p13">18 de julio de 1872</label>
+                
+                        <input type="radio" class="ms-3" id="p14" name="." value="Falso">
+                        <label for="p14">18 de junio de 1872</label>
+                
+                        <input type="radio" class="ms-3" id="p15" name="." value="Falso">
+                        <label for="p15">18 de julio de 1873</label>
+                    </div>
+                </div>
+                <div></div>
+                <div style="width: 10%;" class="d-flex justify-content-between">
+                    <a href="#" onclick="ayuda2(2, 5)" class="btn btn-primary">Pista</a>
+                </div>
+            </div>
+            </fieldset>
+        </form>
+        <div></div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-success" onclick="obtenerRespuestas2(document.getElementById('form1'), document.getElementById('form2'),
+            document.getElementById('form3'), document.getElementById('form4'), document.getElementById('form5'))">Enviar respuestas</button>
+        </div>
+    </div>
+</body>
+</html>
